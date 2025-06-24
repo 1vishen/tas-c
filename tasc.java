@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
-public class tasc{
-    public static void main(String[] args){
-        System.out.println("-----");
-        System.out.println("Hello! Welcome to 'tas-c' task manager");
+public class tasc {
+    public static void main(String[] args) {
+        System.out.println("\n-----");
+
+        System.out.println("Hello! Welcome to 'tas-c' task manager\n");
 
         System.out.println("1. Add task");
         System.out.println("2. View tasks");
@@ -15,7 +16,6 @@ public class tasc{
         System.out.println("Your pick: " + inp);
         sc.close();
 
-
-        System.out.println("-----");
+        System.out.println("-----\n");
     }
 }

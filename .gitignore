@@ -1,67 +1,74 @@
-# ------------------------
-# Java / Maven
-# ------------------------
+# ---------------------
+# Java
+# ---------------------
 
 # Compiled class files
 *.class
 
-# Maven build directory
-/target/
-
-# Dependency directory (if using local repo for any reason)
-# /lib/
-
-# Logs
+# Log files
 *.log
 
-# VM crash logs
-hs_err_pid*
-replay_pid*
-
-# ------------------------
-# IDEs and Editors
-# ------------------------
-
-# VS Code
-.vscode/
-
-# IntelliJ IDEA
-*.iml
-.idea/
-out/
-
-# Eclipse
-.project
-.classpath
-.settings/
-bin/
-
-# NetBeans
-nbproject/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-# BlueJ
+# BlueJ files
 *.ctxt
 
-# ------------------------
-# Archives / Packages
-# ------------------------
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
 
+# Package files
 *.jar
 *.war
+*.nar
 *.ear
 *.zip
 *.tar.gz
 *.rar
 
-# ------------------------
-# OS-specific files
-# ------------------------
+# ---------------------
+# Eclipse
+# ---------------------
+.project
+.classpath
+.settings/
+bin/
+target/
 
-.DS_Store   # macOS Finder metadata
-Thumbs.db   # Windows Explorer metadata
+# ---------------------
+# IntelliJ IDEA
+# ---------------------
+.idea/
+*.iml
+out/
 
+# ---------------------
+# VS Code
+# ---------------------
+.vscode/
+
+# ---------------------
+# Replit (Optional) if included it'll be deleted from replit when it fetches from github, so replit won't run
+# ---------------------
+#.replit
+#replit.nix
+#this folder contains files shared with replit ai
+attached_assets/
+
+# ---------------------
+# OS / Editor-specific
+# ---------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
+
+# ---------------------
+# Temporary files / Backup
+# ---------------------
+*.bak
+*.swp
+*.tmp

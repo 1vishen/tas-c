@@ -1,5 +1,6 @@
 package com.tas_c;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Tas_c {
@@ -12,36 +13,36 @@ public class Tas_c {
 
         System.out.println("1. Add task");
         System.out.println("2. View tasks");
-        System.out.println("3. Delete tasks");
-        System.out.print("Pick an option (1, 2, 3):- ");
+        System.out.println("3. Exit App");
 
         TaskActions taskActions = new TaskActions();
         Scanner sc = new Scanner(System.in);
-        int input = sc.nextInt();
-        sc.nextLine();
-        System.out.println("You picked: " + input);
+        int input;
 
-        switch (input) {
-            case 1:
-                taskActions.addTask(taskList, sc);
-                break;
-            case 2:
-                taskActions.viewTask(taskList);
-                break;
-            default:
-                System.out.println("Invalid Option Selected!");
+        do {
+            System.out.print("Pick an option (1, 2, 3):- ");
+            input = sc.nextInt();
+            sc.nextLine();
+            System.out.println("You picked: " + input);
 
+            switch (input) {
+                case 1:
+                    taskActions.addTask(taskList, sc);
+                    break;
+                case 2:
+                    taskActions.viewTask(taskList);
+                    break;
+                case 3:
+                    System.out.println("Exiting...");
+                    break;
+                default:
+                    System.out.println("Invalid Option Selected!");
+
+            }
         }
+        while(input != 3);
 
-        // if (input == 1) {
-        // System.out.println("Hiii");
-        // } else if (input == 2) {
-        // System.out.println("Hiii2");
-        // } else {
-        // System.out.println("Invalid Option Selected!");
-        // }
-
-        // System.out.println("=====*=====*=====\n");
+        System.out.println("=====*=====*=====\n");
     }
 
 }

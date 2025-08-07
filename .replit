@@ -7,20 +7,22 @@ compile = "mvn compile"
 # Run command: executes your main class using the exec-maven-plugin
 run = "mvn exec:java -Dexec.mainClass=com.tas_c.Tas_c"
 
+hidden = ["**/*.class"]
+
 # Packager section: metadata for Replit’s packaging interface (you can ignore this for now)
 [packager]
 language = "java"
 
 [packager.features]
-packageSearch = true  # Enables Replit's dependency search tool for Java
+packageSearch = true # Enables Replit's dependency search tool for Java
 
 # Java language configuration
 [languages.java]
-pattern = "**/*.java"  # Tells Replit to treat all .java files as source code
+pattern = "**/*.java" # Tells Replit to treat all .java files as source code
 
 # Java language server configuration (used for autocompletion, jump-to-definition, etc.)
 [languages.java.languageServer]
-start = "jdt-language-server"  # JDT is Eclipse’s Java language server
+start = "jdt-language-server" # JDT is Eclipse’s Java language server
 
 # Unit test configuration (not heavily used unless you customize Replit testing tools)
 [unitTest]
@@ -32,7 +34,7 @@ channel = "stable-22_11"
 
 # Debugger configuration
 [debugger]
-support = true  # Enables Replit's debugger
+support = true # Enables Replit's debugger
 
 # Compile command for the debugger — uses Maven so it respects your full build setup
 [debugger.compile]
@@ -50,7 +52,7 @@ command = "initialize"
 type = "request"
 
 [debugger.interactive.initializeMessage.arguments]
-adapterID = "cppdbg"  # This is Replit’s default debug adapter (a bit of a quirk)
+adapterID = "cppdbg"                # This is Replit’s default debug adapter (a bit of a quirk)
 clientID = "replit"
 clientName = "replit.com"
 columnsStartAt1 = true
@@ -69,14 +71,14 @@ command = "launch"
 type = "request"
 
 [debugger.interactive.launchMessage.arguments]
-classPaths = ["target/classes"]  # Compiled output directory
-mainClass = "com.tas_c.Tas_c"    # Fully qualified name of your main class
+classPaths = ["target/classes"] # Compiled output directory
+mainClass = "com.tas_c.Tas_c"   # Fully qualified name of your main class
 
 # Deployment configuration (optional; only used for Cloud Run or Replit Deployments)
 [deployment]
-build = ["mvn", "compile"]  # What Replit runs to build your project
+build = ["mvn", "compile"]                                     # What Replit runs to build your project
 run = ["mvn", "exec:java", "-Dexec.mainClass=com.tas_c.Tas_c"]
-deploymentTarget = "cloudrun"  # You can change this or ignore it for now
+deploymentTarget = "cloudrun"                                  # You can change this or ignore it for now
 
 # Custom workflows (like “Run Tests” button)
 [workflows]
@@ -87,4 +89,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "mvn test"  # Runs your JUnit 5 tests
+args = "mvn test"   # Runs your JUnit 5 tests

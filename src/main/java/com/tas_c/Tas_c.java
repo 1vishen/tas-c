@@ -27,7 +27,8 @@ public class Tas_c {
 
             switch (input) {
                 case 1:
-                    taskActions.addTask(taskList, sc);
+                    String result = taskActions.addTask(taskList, sc);
+                    System.out.println(result);
                     break;
                 case 2:
                     taskActions.viewTask(taskList);

@@ -19,5 +19,5 @@
 ## ▶️ Run
 
 ```bash
-javac Main.java
-java Main
+javac Tas_c.java
+java Tas_c

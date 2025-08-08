@@ -1,0 +1,13 @@
+├── pom.xml
+├── replit.nix
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── com/
+│   │           ├── java-prac/
+│   │           │   └── AnonymousClass.java
+│   │           └── tas_c/
+│   │               └── Tas_c.java
+│   └── test/
+│       └── java/
+│           └── Test.java

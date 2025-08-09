@@ -1,23 +1,5 @@
-# tas-c🗂️ : Java Terminal-Based Task Manager
+# tas-c 🗂️ : Java Terminal-Based Task Manager & Learning Project
 
-> A terminal-based Task Manager built in Java to reinforce core concepts and OOP design.
-
-## 🚀 Features
-
-- Add, view, update, delete tasks
-- Mark tasks as done/pending
-- Organize by priority or deadline
-- File saving & loading
-- Exception handling & OOP structure
-
-## 🛠️ Tech Stack
-
-- Java (JDK 17+)
-- Console-based UI
-- Core Java (OOP, Collections, Exceptions, Threads)
-
-## ▶️ Run
-
-```bash
-javac Tas_c.java
-java Tas_c
+This started as a simple terminal-based task manager, but it’s really just my playground to try out and apply everything I learn in Java.  
+Whenever I pick up a new concept—whether it’s file handling, JDBC, anonymous functions, or threads—I add it here and experiment with it in a real project.  
+So yeah, it’s part app, part coding practice, all in one.

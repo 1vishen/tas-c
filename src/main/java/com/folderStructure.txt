@@ -5,9 +5,9 @@
 │   │   └── java/
 │   │       └── com/
 │   │           ├── java-prac/
-│   │           │   └── AnonymousClass.java
+│   │           │   └── AnonymousClass.java...
 │   │           └── tas_c/
-│   │               └── Tas_c.java
+│   │               └── Tas_c.java...
 │   └── test/
 │       └── java/
 │           └── Test.java

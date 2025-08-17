@@ -70,7 +70,8 @@ desktop.ini
 # ---------------------
 # Environment / Config
 # ---------------------
-.env
+# Ignore env files anywhere in the project
+*.env
 application.properties
 
 # Maven

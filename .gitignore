@@ -8,12 +8,6 @@
 # Log files
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
 # Package files
 *.jar
 *.war
@@ -77,5 +71,17 @@ desktop.ini
 # Environment / Config
 # ---------------------
 .env
-*.sql
 application.properties
+
+# Maven
+target/
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+
+# Ignore dumps but allow schema
+dump*.sql
+*.sql.gz
+

@@ -49,7 +49,7 @@ out/
 # ---------------------
 #.replit
 #replit.nix
-#this folder contains files shared with replit ai
+# this folder contains files shared with replit ai
 attached_assets/
 
 # ---------------------
@@ -72,3 +72,10 @@ desktop.ini
 *.bak
 *.swp
 *.tmp
+
+# ---------------------
+# Environment / Config
+# ---------------------
+.env
+*.sql
+application.properties

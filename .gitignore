@@ -8,12 +8,6 @@
 # Log files
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
 # Package files
 *.jar
 *.war
@@ -49,7 +43,7 @@ out/
 # ---------------------
 #.replit
 #replit.nix
-#this folder contains files shared with replit ai
+# this folder contains files shared with replit ai
 attached_assets/
 
 # ---------------------
@@ -72,3 +66,23 @@ desktop.ini
 *.bak
 *.swp
 *.tmp
+
+# ---------------------
+# Environment / Config
+# ---------------------
+# Ignore env files anywhere in the project
+*.env
+application.properties
+
+# Maven
+target/
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+
+# Ignore dumps but allow schema
+dump*.sql
+*.sql.gz
+
